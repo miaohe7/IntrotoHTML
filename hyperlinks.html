@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Hyperlinks Page</title>
+	<script src="https://kit.fontawesome.com/c4a00654b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="Absolute">
+	<h2>Absolute reference</h2>
+	<p>Absolute reference: the reference include the whole https address: protocal, host and the document.</p>
+	<a href="https://github.com/miaohe7/Web-Development" target="_blank">Web Development git</a>
+	</div>
+
+	<div id="Relative">
+	<h2>Relative Reference</h2>
+	<p>Three ways that we can use Relative Reference:</p>
+		<ol>
+			<li>Link to a local file in the <b>same</b> folder: <a href="index.html" target="_blank">Index page</a></li>
+			<li>Link to a local file in a <b>different</b> folder: <a href="index.html" target="_blank">Index page</a></li>
+			<li>LInk to a <b>different location</b> in the same file, also called <b>Embedded link</b>.
+				<ul>
+					<li><a href="#Absolute">Absolute Reference</a></li>
+					<li><a href="#Relative">Relative Reference</a></li>
+					<li><a href="#Images">Image Reference</a></li>
+				</ul></li>
+		</ol>
+	</div>
+
+	<div id="Images">
+	<h2>Using Images as Link</h2>
+	<a href="https://www.instagram.com/miaohe7/" target="_blank"><i class="fab fa-instagram-square"></i>My instagram</a>
+	<br>
+	<a href="https://www.instagram.com/miaohe7/" target="_blank">
+		<img src="dogandcat.jpeg" height="300" alt="My dog and cat"/>
+	</a>
+	</div>
+<footer>
+	<small>&copy; Miao He</small>
+</footer>
+</body>
+</html>
