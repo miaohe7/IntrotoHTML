@@ -10,5 +10,5 @@ ol{
 }
 
 ul,ol{
-	list-style-image: url(img\sopi.png);
+	list-style-image: url("../imgs/sopi.png");
 }
