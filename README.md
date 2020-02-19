@@ -1,5 +1,5 @@
-# Web-Development - HTML5
-Course taken on coursera, code written in HTML5
+# Web-Development
+Course taken on coursera, code written in HTML5,CSS
 
 Section 1:  Introduction to HTML5
 
