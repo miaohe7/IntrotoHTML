@@ -2,6 +2,9 @@ body{
 	background: #B3B3B3;
 	font-size: 150%;
 	margin:4%;
+	background: #648880;
+  background: linear-gradient(to right, #f6f1d3, #648880, #293f50);
+
 }
 
 header{
@@ -15,11 +18,16 @@ header, footer{
 	background: -webkit-linear-gradient(#666666 0%, #00b7ea 100%);
 	background: -o-linear-gradient(#666666 0%, #00b7ea 100%);
 	background: linear-gradient(#666666 0%, #00b7ea 100%); 
-
+	background: linear-gradient(to right bottom, #666666 0%, #00b7ea 100%); 
+	background: radial-gradient(#666666 0%, #00b7ea 100%); 
+	background: #648880;
+  background: linear-gradient(to right, #f6f1d3, #648880 85%, #293f50);
 }
 
  h1{
  	color: #FFFFFF;
+ 	background: #466368;
+  background: radial-gradient(#648880, #293f50);
  }
  nav{
  	font-variant: small-caps;
@@ -33,8 +41,11 @@ nav a{
 }
 
  h2{ 
- 	color: #666666;
+ 	color: #FFFFFF;
  	background: #00B7EA;
+ 	opacity: 0.5;
+ 	background: #466368;
+  background: radial-gradient(#648880, #293f50);
  }
  .half{
 	width:45%;
@@ -60,4 +71,29 @@ footer{
 }
 img{
 	width: 75px;
+}
+
+/*p{
+  color: red;
+  padding:10px 5px;
+  background: black;
+}
+.fancy{
+  font-family: cursive;
+  background: red;
+  color: green;
+}
+.plain{
+  font-family: Times, serif;
+  color: black;
+}  */
+
+.notice-success {
+  background: #67b11c url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/tick_2.png") 20px 50% no-repeat;
+  /*background: #67b11c url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/tick_1.svg") 20px 50% no-repeat;*/
+  border: 2px solid #467813;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 15px 20px 15px 50px;
 }
