@@ -3,8 +3,9 @@ nav a{
 	color: #FFFFFF;
 	background: #0000FF;
 	display:inline-block;
-	width: 20%;
+	width: 15%;
 	margin-right: 2%
+	
 }
 
 .current{
@@ -12,3 +13,4 @@ nav a{
 	background: #0000FF;
 	text-transform: uppercase;
 }
+
