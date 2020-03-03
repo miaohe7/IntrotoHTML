@@ -2,11 +2,17 @@
 <html>
 <head>
 	<title>playground</title>
+	<link rel="stylesheet" type="text/css" href="playground.css">
 	<script src="playground.js"></script>
 </head>
-<body onload="message('LOAD');displayDate();welcome('Hi')" onload="displayDate()" onresize="message('RESIZE')">
+<body onload="loadFruits()"><!-- onload="message('LOAD');displayDate();welcome('Hi')" onload="displayDate()" onresize="message('RESIZE')"> -->
+	<nav>
+		<a href="http://www.google.com">google</a>
+	</nav>
 	<h1 id="test">Tester</h1>
-	<h1 id="test">Tester</h1>
+	<button onclick="myFunction()">Add favourite</button>
+	<p id="fruits"></p>
+	<a href = "http://www.umich.edu" onclick = "alert(this.href)">University of Michigan</a><br/>
 	<!-- <script>
 		var name = prompt("what is your name?");
 		document.write(name);
@@ -14,12 +20,12 @@
 		alert(name);
 		message();
 	</script> -->
-	<p onclick="message('CLICK')">It is possible to call function based on Events</p>
+	<!-- <p onclick="message('CLICK')">It is possible to call function based on Events</p>
 	<p onmouseover="message('ONMOUSEOVER')">Click the paragraph above to trigger an <em>onclick</em> event</p>
 	<div onclick="welcome('Hi')"> Clicking on this Div will invoke a javascript function</div>
 	<p id="output"></p>
 	<p id="display"></p>
 	<p id="demo">This will be a Date</p>
-	<button type="button" onclick="displayDate()">Display Date</button>
+	<button type="button" onclick="displayDate()">Display Date</button> -->
 </body>
 </html>
