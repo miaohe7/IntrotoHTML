@@ -16,6 +16,7 @@ nav{
 	margin-right: 15px;
 	height: 100vh;
 	overflow: auto;
+	transition: 1s background-color;
 }
 
 nav a{
@@ -23,7 +24,7 @@ nav a{
 	line-height: 45px;
 	height: 45px;
 	color: #FFFFFF;
-	/*background-color: #486B02;*/
+	background-color: #486B02;
 	text-decoration: none;
 	background: url('image/heart.png') no-repeat;
 	background-size: 10px 10px;
@@ -32,7 +33,7 @@ nav a{
 }
 
 nav a:hover{
-	background: #FFC0CB;
+	background-color: #FFC0CB;
 	background-image: url('image/heart.png') no-repeat 20px 20px;
 	color:#DB7093;
 	text-transform: capitalize;
