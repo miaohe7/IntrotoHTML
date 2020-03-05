@@ -20,9 +20,10 @@ nav{
 }
 
 nav a{
+	font-size: 100%;
 	display: block;
 	line-height: 45px;
-	height: 45px;
+	height: 10vh;
 	color: #FFFFFF;
 	background-color: #486B02;
 	text-decoration: none;
@@ -55,4 +56,36 @@ section{
 
 section a{
 	text-decoration: none;
+}
+h1{
+	font-size: 200%;
+}
+h1,h2{
+	text-align: center;
+	text-transform: uppercase;
+}
+.column{
+	color: red;
+}
+
+@media screen and (min-width: 700px){
+	.column{
+		width: 30%;
+		color: blue;
+		display: inline-block;
+		float: left;
+		margin-left: 2%;
+	}
+	
+}
+
+@media screen and (min-width: 1000px){
+	.column{
+		width: 30%;
+		color: green;
+		display: inline-block;
+		float: left;
+		margin-left: 2%;
+	}
+	
 }

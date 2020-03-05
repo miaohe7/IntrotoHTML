@@ -12,7 +12,6 @@
 	<h1 id="test">Tester</h1>
 	<button onclick="myFunction()">Add favourite</button>
 	<p id="fruits"></p>
-	<a href = "http://www.umich.edu" onclick = "alert(this.href)">University of Michigan</a><br/>
 	<!-- <script>
 		var name = prompt("what is your name?");
 		document.write(name);
@@ -27,5 +26,24 @@
 	<p id="display"></p>
 	<p id="demo">This will be a Date</p>
 	<button type="button" onclick="displayDate()">Display Date</button> -->
+	<form action="http://www.google.ca" method="GET"> 
+		<fieldset>
+		<legend>Personal Information</legend>
+		<label for='name'>Name</label><input type="text" id="name" name="name" value="Miao">
+		<br>
+		<label>Email:<input type='email' id="email_addr" name="email" placeholder="me@me.com"></label>
+		<label>Repeat Email:
+			<input type="email" id="email_repeat" name="email2" required onchange="check();"></label>
+		<br>
+		<label for='birth'>Birth</label>
+		<input type="date" id="birth" val="birth"><br>
+		<!-- <label for='pass'>Password</label><input type="password" id="password" name="password"><br>
+		zipcode with pattern: <input type="text" name="zip_codeP" pattern="[0-9]{5}" required><br>
+
+		zipcode with numbers: <input type="number" name="zip_codeN" min="00000" max="99999" required> -->
+		<br>
+		<input type='submit' value="Click Here" onclick="return check();">
+		</fieldset>
+	</form>
 </body>
 </html>
