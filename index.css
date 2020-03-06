@@ -1,15 +1,21 @@
 
 body{
-	background-color: #F2F2F2;
+	/*background-color: #E6DCE5;*/
+	background: linear-gradient(#DFC7C1, #F4DCD6 20%,#B2D9EA 40%, #84B4C8 60%, #619196); 
+	/*background: linear-gradient(to right bottom,#F9E1E0 0%, #FEADB9, 45%, #BC85A3, 100%); */
+
+	font-family: "Comic Sans MS", cursive, sans-serif;
 	/*margin:1%;
 	padding: 1%;*/
 }
 
 nav{
 	box-sizing: border-box;
-	border: 1px solid #DB7093;
-	color: #DB7093;
-	background: #DB7093;
+
+	/*border: 1px solid #DB7093;*/
+	/*color: #DB7093;*/
+	background: #D2A3A9;
+	background: linear-gradient(#DFC7C1, #F4DCD6 20%,#B2D9EA 40%, #84B4C8 60%, #619196);
 	display: inline-block;
 	width: 20%;
 	min-width: 125px;
@@ -56,9 +62,11 @@ section{
 
 section a{
 	text-decoration: none;
+	color: #D2A3A9;
 }
 h1{
-	font-size: 200%;
+	font-size: 300%;
+	color: #AF6E4E;
 }
 h1,h2{
 	text-align: center;
@@ -89,3 +97,118 @@ h1,h2{
 	}
 	
 }
+
+p{
+	color: #909090;
+}
+
+:root {
+  --color-1: #ff748c;
+  --color-2: #ff8da1;
+  --color-3: #ffa7b6;
+  --color-4: #ffc0cb;
+  --color-5: #ffdae0;
+}
+
+.shape {
+  cy: 30;
+  r: 10;
+  animation: moveCircle 1250ms ease-in-out both infinite;
+}
+
+.shape:nth-child(1) {
+  cx: 30;
+  fill: var(--color-1);
+}
+
+.shape:nth-child(2) {
+  cx: 60;
+  fill: var(--color-2);
+  animation-delay: 100ms;
+}
+
+.shape:nth-child(3) {
+  cx: 90;
+  fill: var(--color-3);
+  animation-delay: 200ms;
+}
+
+.shape:nth-child(4) {
+  cx: 120;
+  fill: var(--color-4);
+  animation-delay: 300ms;
+}
+
+.shape:nth-child(5) {
+  cx: 150;
+  fill: var(--color-5);
+  animation-delay: 400ms;
+}
+
+@keyframes moveCircle {
+  50% {
+    cy: 100;
+    r: 8;
+  }
+}
+
+/*--test--*/
+/*@keyframes backgroundshift {
+  49.99% {
+    background: white;
+  }
+  50% {
+    background: black;
+  }
+  100% {
+    background: black;
+  }
+}
+
+@keyframes scaleshift {
+  0% {
+    transform: scale(.001);
+    rx: 50;
+  }
+  35% { 
+    rx: 40;
+  }
+  50% { 
+    transform: scale(1);
+    rx: 0;
+  }
+  100% { 
+    transform: scale(1);
+    rx: 0;
+  }
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  animation: backgroundshift 3s alternate infinite;
+}
+svg { min-height: 100vh; }
+pattern rect {
+  animation: scaleshift 3s infinite cubic-bezier(.36,.17,.86,.67);
+}
+.black {
+  fill: black;
+  animation-direction: alternate;
+}
+.white {
+  fill: white;
+  animation-direction: alternate-reverse;
+}
+.topleft { 
+  transform-origin: 50px 50px;
+}
+.bottomleft { 
+  transform-origin: 50px 150px;
+}
+.topright {
+  transform-origin: 150px 50px;
+}
+.bottomright { 
+  transform-origin: 150px 150px;
+}
+*/
