@@ -27,27 +27,22 @@ nav a{
 	line-height: 45px;
 	height: 10vh;
 	color: #000000;
-	background-color: #486B02;
 	text-decoration: none;
-	background: url('image/heart.png') no-repeat;
 	background-size: 10px 10px;
 	padding-left: 50px;
 	margin: 0 0 0 0; 
 }
 
 nav a:hover{
-	background-color: #FFC0CB;
-	background-image: url('image/heart.png') no-repeat 20px 20px;
-	color:#DB7093;
-	text-transform: capitalize;
+	color:#0000FF;
 }
 
-
+/*
 .active{
 	color:#DB7093;
 	background: #FFC0CB;
 	text-transform: capitalize;
-}
+}*/
 
 section{
 	display: inline-block;
