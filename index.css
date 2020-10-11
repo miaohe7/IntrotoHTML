@@ -1,12 +1,8 @@
 
 body{
 	background-color: #FFFFFF;
-	/*background: linear-gradient(#DFC7C1, #F4DCD6 20%,#B2D9EA 40%, #84B4C8 60%, #619196); */
-	/*background: linear-gradient(to right bottom,#F9E1E0 0%, #FEADB9, 45%, #BC85A3, 100%); */
 
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	/*margin:1%;
-	padding: 1%;*/
 }
 
 nav{
@@ -15,7 +11,7 @@ nav{
 	/*border: 1px solid #DB7093;*/
 	/*color: #DB7093;*/
 	background: #FFFFFF;
-	/*background: linear-gradient(#DFC7C1, #F4DCD6 20%,#B2D9EA 40%, #84B4C8 60%, #619196);*/
+
 	display: inline-block;
 	width: 20%;
 	min-width: 125px;
