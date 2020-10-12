@@ -1,0 +1,190 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+.navigation{
+    display: block;
+}
+body{
+    font-family: "Roboto",san-serif;
+    background-image: url("../image/castlegrey.jpg");
+    background-size: cover;
+}
+
+
+nav{
+    font-family: 'Poppins', sans-serif;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #ffffff;
+}
+
+.logo{
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.nav-links a{
+    color:#2c3e50;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 14px;
+
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width:25px;
+    height:3px;
+    background-color:#2c3e50;
+    margin:5px;
+    transition: all 0.3s ease;
+}
+
+.main-content{
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+    top:10%;
+    display: inline-block;
+    align-items:center; 
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 10px #000000;
+}
+
+.top-section{
+    background-color: #575fcf;
+    padding: 50px 0 50px 0;
+    color: #ecf0f1; 
+}
+
+.top-section img{
+    width:50%;
+    border-radius: 50%;
+}
+
+.top-section p{
+    margin: 5px 0 5px 0;
+}
+
+.top-section .name{
+    font-size:30px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.top-section .email, .mobile{
+    font-size: 18px;
+}
+
+.middle-section,.bottom-section{
+    background-color:#ffffff; 
+}
+
+.middle-section{
+    position: relative;
+}
+.social {
+    position: absolute;
+    width: 100%;
+    top:-50px;
+}
+
+.social i{
+    width: 50px;
+    height:50px;
+    font-size:30px;
+    color: #ffffff;
+    background-color: #2c3e50;
+    border-radius: 50%;
+    line-height: 50px;
+    margin: 20px;
+}
+
+.bottom-section{
+    padding:40px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.bottom-section span{
+    display: block;
+}
+
+.border{
+    width: 1px;
+    height:40px;
+    background-color: #d3dae2;
+    margin-left:60px;
+}
+
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right:0px;
+        height:92vh;
+        top:8vh;
+        background-color:#ffffff;
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        width: 20%;
+        transform:translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity:0;
+    }
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+   
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform:translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
