@@ -5,18 +5,6 @@ body{
 	/* font-family: "Comic Sans MS", cursive, sans-serif; */
 }
 
-.blog-progress {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  z-index: 9999;
-  height: 2px;
-  background-color: #4353ff;
-  -webkit-transform-origin: 0% 50%;
-  -ms-transform-origin: 0% 50%;
-  transform-origin: 0% 50%;
-}
 
 nav{
 	box-sizing: border-box;

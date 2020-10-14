@@ -1,16 +1,19 @@
-*{
-    margin: 0px;
-    padding:0px;
-    box-sizing:border-box;
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
 }
+
+body{
+    font-family: Poppins;
+    background: url("../image/castlegrey.jpg") no-repeat 50% 50%;
+    background-attachment: fixed;
+}
+
+/*navigation bar*/
 .nav-links .active{
     color:#575fcf;
-}
-body{
-    font-family: "Roboto", sans-serif;
-    background-image: url("../image/castlegrey.jpg");
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 
@@ -62,7 +65,9 @@ nav{
     margin:5px;
     transition: all 0.3s ease;
 }
+/*end of navigation bar*/
 
+/*business card*/
 .main-content{
     position: absolute;
     margin-left: 50%;
@@ -141,8 +146,8 @@ nav{
     background-color: #d3dae2;
     margin-left:60px;
 }
-
-
+/*end of business card*/
+/*Adaptive design*/
 @media screen and (max-width:1150px){
     body{
         overflow-x: hidden;
@@ -171,7 +176,7 @@ nav{
 .nav-active{
     transform: translateX(0%);
 }
-   
+
 @keyframes navLinkFade{
     from{
         opacity: 0;
@@ -182,7 +187,8 @@ nav{
         transform: translateX(0px);
     }
 }
-
+/*end of adaptive design*/
+/*burger menu animation*/
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
 }
@@ -192,7 +198,8 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
 }
-
+/*end of burger menu animation*/
+/*circle animation*/
 :root {
     --color-1: #ff748c;
     --color-2: #ff8da1;
@@ -242,6 +249,8 @@ nav{
       r: 8;
     }
   }
+/*end of circle animation*/
+
 
 .introsection,.column1,.column2,.column3 {
     display: block;
@@ -255,13 +264,13 @@ nav{
 
 section{
     display: inline-block;
-    width:80%;
+    width:60%;
     height: 100%;
     overflow: auto;
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 50%;
     transform: translateX(-50%);
 }
